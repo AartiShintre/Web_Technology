@@ -1,0 +1,36 @@
+to run project -ng server 
+                ng s
+                ng s-o
+    package.json-configuration file 
+                 information about your project
+    package lock.json -->is also configuration file with detailed information
+    angular.json-->project configuration
+    sytle.css-->global css
+    gitignore--> version control file 
+    editorconfig-->visual studio code madhe changes karnya sathi
+    main.ts-entry file 
+    appconfig.ts-->app configuration file 
+
+    datatypes-->premitive and non premitive
+
+    variable declaration
+    let name:string ="Srushti";
+    let isloaded:boolean="true";
+    let age:number=21;
+    let price:number=99.99;
+    let data:any=null;
+
+    components are ui blocks of structre 
+    when we create component-4files-->html,ts,css,spesces.ts
+    to create component we use -->ng generate component component_name 
+                                  ng g c
+data binding --->2 types ---> one way-->interpolation,property and event
+                              two way
+
+interpolation--> {{value}}
+property--> [property]="value"
+event -->(event)="handler()"
+
+two way-->[(ngmodel)]="value"
+
+data binding-->connect ui to code 

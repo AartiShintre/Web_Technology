@@ -1,0 +1,22 @@
+//used as backend technology
+//minimal and flexible web application framework for node js that simplifies the development
+// of web servers and applications
+//for comlicated and large application express is used 
+//features------>
+routing
+middleware support
+request and response handling 
+rest api creation
+template rendering
+
+//routing in express js
+//routing refers to determine how an application respond to the client request for
+// specific url and http methods
+//...........about ,contact ,department 
+//components of routing--->url path,http method,handler function
+//middleware in express js
+//middleware is a function that executes during the lifecycle of a request before sending 
+//final response to the client
+//they have acess to request response and next 
+
+

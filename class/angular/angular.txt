@@ -1,0 +1,2 @@
+single page application -while transfering from one page to another it will not load
+e.g you tube 
