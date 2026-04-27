@@ -1,0 +1,14 @@
+What is react => it is js library used to build the user interfaces it helps to crate a reusable componant
+jsX => javascript + xml
+it allows writing html inside js
+eg : const ele = <h1>Hello Student </h1>
+
+Functinal component => Simple javascript functin that return jsX
+function Welcome{
+    <h1>Hello</h1>
+}
+Activity
+What is react, why we use, why hype?
+what is JSX?
+what is Functinal component?
+what is probs?

@@ -1,0 +1,43 @@
+react is a js library by meta to build fast interactive user interface
+
+Activity : 
+Diff bet react and angular
+
+Why do we use raect ?
+problem with js full page load, complex DOM manipulation, hard to manage large appraect 
+sol => upadate only requried part with react, uses reusable component
+
+SPA => single page application
+eg. insta, facebook
+page does not reload only content change
+
+Virtal DOM =>
+react create a copy of real DOM which called virtual DOM
+When dta changes react updates virtual DOM
+Update only change part in real DOM
+
+Tool instalation
+1. npm
+2. node
+
+app.jsx => remove code
+jsx => javascript + html
+it allows us to wirte html code inside js code
+const ele = <h1>hello</h1>
+
+Rules : 
+must return single parent
+use scope bracket for js
+
+Two type of component 
+1. functional component 
+function Student(){
+    
+}
+2. class component
+
+Props
+data passes fron parent to child
+fubction Student(props){
+    return<h2>Name:{props.name}</h2>
+}
