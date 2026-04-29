@@ -1,0 +1,112 @@
+//1.Difference between package.json and package-lock.json
+package.json → contains project info + dependency names
+package-lock.json → stores exact versions of installed packages
+
+//2.Difference between Dev dependencies and dependencies
+dependencies-> required in production 
+               needed to sun project 
+               ex.express
+dev-dependencies->needed only in development 
+                  ex.nodemon
+
+//3.routes creation and use js in that
+Routes are used to handle different URLs (requests) in a web application.
+app.get("/", (req, res) => {
+  res.send("Home Page");
+});
+
+app.get("/about", (req, res) => {
+  res.send("About Page");
+});
+
+//4.types of HTTP methods GET, PUT, POST, DELETE
+GET → get data
+POST → send data
+PUT → update data
+DELETE → delete data
+
+//Middleware
+
+//1.Why we use middleware ?
+To process request before sending response
+ex.logging,authentication
+
+//2.what are the types of middleware?
+1. Application-Level Middleware
+
+ Works on the entire application
+ Runs for every request
+ Used for logging, authentication, etc.
+
+2. Router-Level Middleware
+
+ Works only for specific routes
+ Applied to a particular group of URLs
+ Helps in organizing code better
+
+3. Built-in Middleware
+
+ Already provided by Express
+ Used for common tasks like handling JSON data or static files
+
+4. Third-Party Middleware
+
+ Installed from external packages
+ Adds extra features like security, CORS, etc.
+
+5. Error-Handling Middleware
+
+Used to handle errors in the application
+Prevents app from crashing and sends proper error response
+
+//3.What are the benefits of middleware ?
+Reuse code
+Better security
+Clean structure
+
+//4.Where the middleware is used in company level ?
+Authentication (JWT)
+Logging (user activity)
+Security checks
+API validation
+
+//1.What are the query parameters ?
+Data sent in URL after ?
+
+Example:
+/user?id=10
+
+//2.detail study about query parameter
+Access using req.query
+Used to send small data
+
+//3.3-4 examples of query parameters
+/search?q=phone
+/user?id=1
+/product?price=1000
+
+//4.real time use of query parameter
+Search
+Filters
+
+//implement EJS
+npm install ejs
+
+//what are static files ?
+Files like CSS, JS, images
+
+//what is express router?
+Used to separate routes into different files
+
+//complete express workflow
+mkdir my-express-app
+cd my-express-app
+-->my-express-app/ (empty folder)
+npm init -y
+-->package.json
+npm install express
+-->node_modules/ → all installed packages
+package-lock.json → exact versions
+node app.js
+-->runs app 
+start server

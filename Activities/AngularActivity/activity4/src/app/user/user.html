@@ -1,0 +1,13 @@
+<h2>User List</h2>
+
+<!-- Spinner -->
+<div *ngIf="loading">
+  <p>Loading...</p>
+</div>
+
+<!-- Data -->
+<ul *ngIf="!loading">
+  <li *ngFor="let user of users">
+    <b>{{ user.name }}</b> - {{ user.email }}
+  </li>
+</ul>

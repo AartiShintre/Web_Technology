@@ -1,0 +1,107 @@
+//types of components
+
+components are the building blocks of UI.
+
+1. Functional Components
+Simple JavaScript functions
+Return JSX (UI)
+Easy to write and understand
+Mostly used in modern React
+->Can use Hooks (like useState, useEffect)
+
+2. Class Components
+Use render() method to return JSX
+Have lifecycle methods
+
+-->Used in older React
+Now mostly replaced by functional components + hooks
+-->Difference 
+Functional → simple, faster, modern
+Class → complex, lifecycle-based, old approach
+
+//props
+What are Props?
+.Props are used to pass data from parent to child component
+.Used for communication between components
+.Passed like HTML attributes
+.Cannot be modified inside child
+.Parent sends data → Child receives and displays
+.Props are used to make components reusable by passing dynamic data.
+
+//parent component(App.jsx)
+import Student from "./Student";
+
+function App() {
+  return (
+    <div>
+      <h1>Student Details</h1>
+
+      <Student name="Srushti" age="20" />
+      <Student name="Rahul" age="22" />
+
+    </div>
+  );
+}
+
+export default App;
+
+//child component(Student.jsx)
+function Student(props) {
+  return (
+    <div>
+      <h2>Name: {props.name}</h2>
+      <h3>Age: {props.age}</h3>
+    </div>
+  );
+}
+
+export default Student;
+
+//State
+.State is used to store dynamic data inside a component
+.It can change over time
+.When state changes → UI automatically updates 
+-->Example 1: Counter
+State stores a number
+When button is clicked → value increases
+
+-->Example 2: Toggle (Show/Hide)
+State stores true/false
+Button click toggles visibility
+
+//code
+for using state we use hook useState from react 
+syntax-->
+const [variable, setVariable] = useState(initialValue);
+variable → stores value
+setVariable → updates value
+
+//hooks
+Hooks are functions that allow you to use state and
+lifecycle features in functional components
+//1.useState
+syntax--> const [state, setState] = useState(initialValue);
+//code example
+import { useState } from "react";
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h2>{count}</h2>
+      <button onClick={() => setCount(count + 1)}>Click</button>
+    </div>
+  );
+}
+//2.useEffect
+
+import { useEffect } from "react";
+
+function Example() {
+  useEffect(() => {
+    console.log("Component Loaded");
+  }, []);
+
+  return <h2>Hello</h2>;
+}
